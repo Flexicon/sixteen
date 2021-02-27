@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links - Sixteen</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Helpful Links</h1>
+
+      <p>Some tasty and helpful links for your enjoyment</p>
+
+      <ul>
+        {{range .Links}}
+        <li><a href="{{.}}">{{.}}</a></li>
+        {{end}}
+      </ul>
+    </main>
+  </body>
+</html>
